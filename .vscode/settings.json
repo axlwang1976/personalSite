@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.formats": [
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "dist/css/"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "git.ignoreLimitWarning": true
+}
