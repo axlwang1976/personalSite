@@ -1,0 +1,18 @@
+// Color
+$color-primary: #282c37;
+$color-secondary: #2b90d9;
+$color-secondary-light: #82b6db;
+$color-secondary-dark: #044a7c;
+$color-grey-light: #d9e1e8;
+$color-grey-dark: #9baec8;
+$gradient-dark: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+// Fonts
+$font-primary: 'Lato',
+sans-serif;
+$font-heading: 'Josefin Sans',
+sans-serif;
+$font-chinese: '微軟正黑體',
+sans-serif;
+// Layout
+$padding-main: 0 15vw;
+$padding-2: 15rem 15vw;
