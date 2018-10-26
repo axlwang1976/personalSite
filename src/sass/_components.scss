@@ -1,0 +1,27 @@
+.text__icon,
+.brand__icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: $color-secondary;
+}
+
+.time__icon {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: $color-secondary;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(70%, -50%);
+    z-index: 9;
+}
+
+.brand__icon-babel {
+    transform: translateY(.5rem);
+}
