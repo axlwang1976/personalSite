@@ -6,6 +6,7 @@ $color-secondary-dark: #044a7c;
 $color-grey-light: #d9e1e8;
 $color-grey-dark: #9baec8;
 $gradient-dark: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+$shadow: 0 1rem 3rem rgba($color-primary, .3);
 // Fonts
 $font-primary: 'Lato',
 sans-serif;
