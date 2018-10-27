@@ -66,6 +66,7 @@ body {
   color: #fff;
   display: block;
   padding: 1rem 0;
+  text-transform: none;
 }
 
 .header {
@@ -189,8 +190,7 @@ body {
 }
 
 .about {
-  padding: 15rem 15vw;
-  margin-top: calc(-100vh * .15);
+  padding: 10rem 15vw;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,8 +202,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  margin-top: calc(-100vh * .15);
+  padding: 15rem 15vw;
   background-color: #d9e1e8;
   z-index: 5;
 }
@@ -351,8 +351,7 @@ body {
 }
 
 .skill {
-  padding: 15rem 15vw;
-  margin-top: calc(-100vh * .15);
+  padding: 10rem 15vw;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,8 +363,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-color: #82b6db;
   z-index: 4;
 }
@@ -446,8 +443,7 @@ body {
 }
 
 .work {
-  padding: 15rem 15vw;
-  margin-top: calc(-100vh * .15);
+  padding: 10rem 15vw;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,18 +455,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-color: #d9e1e8;
   z-index: 3;
 }
 
-.work__container-web {
+.work__container-web, .work__container-app {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -478,47 +472,59 @@ body {
   margin-bottom: 3rem;
 }
 
+.work__container-app {
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
 .work__item:hover .work__title-link:link {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-3.6rem);
+          transform: translateY(-3.6rem);
   -webkit-box-shadow: 0 1rem 3rem rgba(40, 44, 55, 0.3);
           box-shadow: 0 1rem 3rem rgba(40, 44, 55, 0.3);
 }
 
 .work__item:hover .work__title-link:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(-3.4rem);
+          transform: translateY(-3.4rem);
 }
 
 .work__img {
   margin-bottom: 1rem;
 }
 
-.work__img-desktop {
+.work__img-desktop, .work__img-app {
   width: 100%;
-}
-
-.work__img-mobile {
-  width: auto;
-  height: 100%;
 }
 
 .work__title {
   font-family: "微軟正黑體", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #fff;
   background-color: #9baec8;
   padding: 1rem 0;
   text-align: center;
+  -webkit-transform: translateY(-3.4rem);
+          transform: translateY(-3.4rem);
+  width: 90%;
+  margin: auto;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(40, 44, 55, 0.5);
+          box-shadow: 0 0.5rem 1rem rgba(40, 44, 55, 0.5);
 }
 
 .work__title-link {
   font-family: "微軟正黑體", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #fff;
   background-color: #9baec8;
   padding: 1rem 0;
   text-align: center;
+  -webkit-transform: translateY(-3.4rem);
+          transform: translateY(-3.4rem);
+  width: 90%;
+  margin: auto;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(40, 44, 55, 0.5);
+          box-shadow: 0 0.5rem 1rem rgba(40, 44, 55, 0.5);
 }
 
 .work__title-link:link, .work__title-link:visited {
@@ -531,15 +537,15 @@ body {
 }
 
 .work__title-link:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-3.6rem);
+          transform: translateY(-3.6rem);
   -webkit-box-shadow: 0 1rem 3rem rgba(40, 44, 55, 0.3);
           box-shadow: 0 1rem 3rem rgba(40, 44, 55, 0.3);
 }
 
 .work__title-link:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(-3.4rem);
+          transform: translateY(-3.4rem);
 }
 
 .text__icon,

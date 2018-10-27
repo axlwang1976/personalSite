@@ -7,6 +7,7 @@ $color-grey-light: #d9e1e8;
 $color-grey-dark: #9baec8;
 $gradient-dark: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 $shadow: 0 1rem 3rem rgba($color-primary, .3);
+$shadow-dark: 0 .5rem 1rem rgba($color-primary, .5);
 // Fonts
 $font-primary: 'Lato',
 sans-serif;
@@ -16,4 +17,4 @@ $font-chinese: '微軟正黑體',
 sans-serif;
 // Layout
 $padding-main: 0 15vw;
-$padding-2: 15rem 15vw;
+$padding-2: 10rem 15vw;

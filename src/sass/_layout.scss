@@ -93,6 +93,8 @@
 
 .about {
     @include section;
+    margin-top: calc(-100vh * .15);
+    padding: 15rem 15vw;
     background-color: $color-grey-light;
     z-index: 5;
     &__grid {
@@ -229,46 +231,55 @@
     background-color: $color-grey-light;
     z-index: 3;
     &__container {
-        &-web {
+        &-web,
+        &-app {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
             grid-gap: 3rem;
             justify-content: space-between;
             margin-bottom: 3rem;
         }
+        &-app {
+            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        }
     }
     &__item:hover &__title-link:link {
-        transform: translateY(-2px);
+        transform: translateY(-3.6rem);
         box-shadow: $shadow;
     }
     &__item:hover &__title-link:active {
-        transform: translateY(1px);
+        transform: translateY(-3.4rem);
     }
     &__img {
         margin-bottom: 1rem;
-        &-desktop {
+        &-desktop,
+        &-app {
             width: 100%;
-        }
-        &-mobile {
-            width: auto;
-            height: 100%;
         }
     }
     &__title {
         font-family: $font-chinese;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #fff;
         background-color: $color-grey-dark;
         padding: 1rem 0;
         text-align: center;
+        transform: translateY(-3.4rem);
+        width: 90%;
+        margin: auto;
+        box-shadow: $shadow-dark;
         &-link {
             font-family: $font-chinese;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: #fff;
             background-color: $color-grey-dark;
             padding: 1rem 0;
             text-align: center;
+            transform: translateY(-3.4rem);
+            width: 90%;
+            margin: auto;
+            box-shadow: $shadow-dark;
             &:link,
             &:visited {
                 text-decoration: none;
@@ -278,11 +289,11 @@
                 border-radius: 10rem;
             }
             &:hover {
-                transform: translateY(-2px);
+                transform: translateY(-3.6rem);
                 box-shadow: $shadow;
             }
             &:active {
-                transform: translateY(1px);
+                transform: translateY(-3.4rem);
             }
         }
     }
