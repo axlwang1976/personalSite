@@ -1,27 +1,68 @@
-.text__icon,
-.brand__icon {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: $color-secondary;
-}
-
-.time__icon {
-    display: inline-block;
-    width: 6rem;
-    height: 6rem;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: $color-secondary;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(70%, -50%);
-    z-index: 9;
-}
-
-.brand__icon-babel {
-    transform: translateY(.5rem);
-}
+    .text__icon,
+    .brand__icon {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: $color-secondary;
+    }
+    
+    .time__icon {
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: $color-secondary;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(70%, -50%);
+        z-index: 9;
+    }
+    
+    .brand__icon-babel {
+        transform: translateY(.5rem);
+    }
+    
+    .btn {
+        &,
+        &:link,
+        &:visited {
+            width: 90%;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 4rem;
+            display: inline-block;
+            border-radius: .5rem;
+            transition: all .2s;
+            position: relative;
+            font-size: 1.6rem;
+            border: none;
+            cursor: pointer;
+            background-color: $color-primary;
+            color: $color-grey-light;
+            margin: 3rem 0;
+        }
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: $shadow;
+        }
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: $shadow-dark;
+        }
+        &-email {
+            &,
+            &:link,
+            &:visited {
+                width: 15rem;
+                text-align: center;
+                padding: 1.2rem 4rem;
+                margin-top: 1rem;
+            }
+        }
+    }

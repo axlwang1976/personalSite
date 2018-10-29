@@ -180,7 +180,6 @@
 .skill {
     @include section;
     background-color: $color-secondary-light;
-    z-index: 4;
     &__container {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -229,7 +228,6 @@
 .work {
     @include section;
     background-color: $color-grey-light;
-    z-index: 3;
     &__container {
         &-web,
         &-app {
@@ -260,7 +258,7 @@
     }
     &__title {
         font-family: $font-chinese;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: #fff;
         background-color: $color-grey-dark;
         padding: 1rem 0;
@@ -271,7 +269,7 @@
         box-shadow: $shadow-dark;
         &-link {
             font-family: $font-chinese;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             color: #fff;
             background-color: $color-grey-dark;
             padding: 1rem 0;
@@ -295,6 +293,79 @@
             &:active {
                 transform: translateY(-3.4rem);
             }
+        }
+    }
+}
+
+.contact {
+    @include section;
+    background-color: $color-secondary-light;
+}
+
+.form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__group {
+        width: 100%;
+    }
+    &__input,
+    &__textarea {
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        background-color: #fff;
+        border: none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: all .2s;
+        &:focus {
+            outline: none;
+            border-bottom: 3px solid $color-primary;
+            box-shadow: $shadow-dark;
+        }
+        &:focus:invalid {
+            border-bottom: 3px solid $color-error;
+        }
+        &::-webkit-input-placeholder,
+        &::-webkit-textarea-placeholder {
+            color: $color-grey-light;
+        }
+    }
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+    &__input:placeholder-shown+&__label,
+    &__textarea:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
+
+.footer {
+    background-color: $color-primary;
+    text-align: center;
+    padding: 3rem 0;
+    &__info {
+        color: $color-grey-light;
+        font-size: 1.4rem;
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        a,
+        a:link,
+        a:visited {
+            color: $color-grey-light;
         }
     }
 }
