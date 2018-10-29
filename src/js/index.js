@@ -1,2 +1,2 @@
-import * as detectIE from './detectIE';
-import * as functional from './function';
+import './detectIE';
+import './function';
