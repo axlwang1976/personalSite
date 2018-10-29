@@ -11,7 +11,7 @@
     .time__icon {
         display: inline-block;
         width: 6rem;
-        height: 6rem;
+        height: 4rem;
         stroke-width: 0;
         stroke: currentColor;
         fill: $color-secondary;
@@ -20,6 +20,11 @@
         top: 50%;
         transform: translate(70%, -50%);
         z-index: 9;
+        @media only screen and (max-width: $bp-small) {
+            right: 50%;
+            top: 100%;
+            transform: translate(50%, -10px) rotate(90deg);
+        }
     }
     
     .brand__icon-babel {
@@ -30,7 +35,7 @@
         &,
         &:link,
         &:visited {
-            width: 90%;
+            width: 100%;
             text-transform: uppercase;
             text-decoration: none;
             padding: 1.5rem 4rem;
@@ -39,6 +44,12 @@
             transition: all .2s;
             position: relative;
             font-size: 1.6rem;
+            @media only screen and (max-width: $bp-largest) {
+                font-size: 2rem;
+            }
+            @media only screen and (max-width: $bp-large) {
+                font-size: 2rem;
+            }
             border: none;
             cursor: pointer;
             background-color: $color-primary;
@@ -59,7 +70,7 @@
             &,
             &:link,
             &:visited {
-                width: 15rem;
+                width: 100%;
                 text-align: center;
                 padding: 1.2rem 4rem;
                 margin-top: 1rem;
