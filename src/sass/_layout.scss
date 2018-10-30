@@ -96,6 +96,24 @@
                 width: 100%;
             }
         }
+        &-fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgba($color-primary, .9);
+            transform: translateY(-100%);
+            animation: nav-animation .3s ease-in;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes nav-animation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -430,6 +448,7 @@
     align-items: center;
     &__group {
         width: 100%;
+        margin-bottom: 2.5rem;
     }
     &__input,
     &__textarea {

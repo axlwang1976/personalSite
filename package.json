@@ -29,6 +29,8 @@
     },
     "dependencies": {
         "animated-scroll-to": "^1.2.2",
-        "babel-polyfill": "^6.26.0"
+        "axios": "^0.18.0",
+        "babel-polyfill": "^6.26.0",
+        "node-mailjet": "^3.3.1"
     }
 }
