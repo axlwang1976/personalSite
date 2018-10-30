@@ -411,7 +411,7 @@ body {
     font-size: 1.5rem;
     color: #fff;
     background-color: #9baec8;
-    padding: 1rem 0;
+    padding: 1rem .5rem;
     text-align: center;
     transform: translateY(-3.4rem);
     width: 90%;
@@ -428,7 +428,7 @@ body {
       font-size: 1.5rem;
       color: #fff;
       background-color: #9baec8;
-      padding: 1rem 0;
+      padding: 1rem .5rem;
       text-align: center;
       transform: translateY(-3.4rem);
       width: 90%;
@@ -440,6 +440,9 @@ body {
       @media only screen and (max-width: 81.25em) {
         .work__title-link {
           font-size: 2.2rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .work__title-link {
+          font-size: 1.2rem; } }
       .work__title-link:link, .work__title-link:visited {
         text-decoration: none;
         display: block;

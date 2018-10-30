@@ -1,23 +1,37 @@
-import animateScrollTo from 'animated-scroll-to';
+const scrollToElement = require('scroll-to-element');
 
 // nav
 const navBtns = document.querySelectorAll('.header__nav-link');
 
 navBtns[0].addEventListener('click', () => {
-    animateScrollTo(document.getElementById('section-about'));
-});
+    scrollToElement('.about');
+})
+navBtns[0].addEventListener('touchstart', () => {
+    scrollToElement('.about');
+})
 
 navBtns[1].addEventListener('click', () => {
-    animateScrollTo(document.getElementById('section-skill'));
-});
+    scrollToElement('.skill');
+})
+navBtns[1].addEventListener('touchstart', () => {
+    scrollToElement('.skill');
+})
 
 navBtns[2].addEventListener('click', () => {
-    animateScrollTo(document.getElementById('section-work'));
-});
+    scrollToElement('.work');
+})
+navBtns[2].addEventListener('touchstart', () => {
+    scrollToElement('.work');
+})
 
 navBtns[3].addEventListener('click', () => {
-    animateScrollTo(document.getElementById('section-contact'));
-});
+    scrollToElement('.contact');
+})
+navBtns[3].addEventListener('touchstart', () => {
+    scrollToElement('.contact');
+})
+
+
 
 // header
 window.addEventListener('scroll', function() {
