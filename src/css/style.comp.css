@@ -423,6 +423,9 @@ body {
     @media only screen and (max-width: 81.25em) {
       .work__title {
         font-size: 2.2rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .work__title {
+        font-size: 1.4rem; } }
     .work__title-link {
       font-family: "微軟正黑體", sans-serif;
       font-size: 1.5rem;
@@ -442,7 +445,7 @@ body {
           font-size: 2.2rem; } }
       @media only screen and (max-width: 31.25em) {
         .work__title-link {
-          font-size: 1.2rem; } }
+          font-size: 1.4rem; } }
       .work__title-link:link, .work__title-link:visited {
         text-decoration: none;
         display: block;
