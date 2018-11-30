@@ -42,15 +42,17 @@
             字樣，引數寫在箭頭左方，箭頭右方為函式本體</span><br>
           &nbsp;&nbsp;&nbsp;&nbsp;return '張' + name;<br>
           });<br>
-          const fullNames3 = names.map(name => {<span class="study__detailCode-span">// 引數只有一個可省略 ( )</span><br>
+          const fullNames3 = firstNames.map(name => {<span class="study__detailCode-span">// 引數只有一個可省略 ( )</span><br>
           &nbsp;&nbsp;&nbsp;&nbsp;return '張' + name;<br>
           });<br>
-          const fullNames4 = names.map(name => return '張' + name);<span class="study__detailCode-span">// 若函式內容僅有一列，可省略
+          const fullNames4 = firstNames.map(name => return '張' + name);<span class="study__detailCode-span">//
+            若函式內容僅有一列，可省略
             { }</span><br>
-          const fullNames5 = names.map(name => '張' + name);<span class="study__detailCode-span">// 若函式內容僅有一列且為 return
+          const fullNames5 = firstNames.map(name => '張' + name);<span class="study__detailCode-span">// 若函式內容僅有一列且為
+            return
             something，可省略 return 字樣</span><br>
-          <span class="study__detailCode-span">// fullNames1~5的輸出結果接相同為['張飛', '張菲']</span><br><br>
-          const fullNames6 = names.map(() => '張灰');<span class="study__detailCode-span">// 若沒有引數要寫空白 ( )</span>
+          <span class="study__detailCode-span">// fullNames1~5的輸出結果皆相同為['張飛', '張菲']</span><br><br>
+          const fullNames6 = firstNames.map(() => '張灰');<span class="study__detailCode-span">// 若沒有引數要寫空白 ( )</span>
         </div>
         <p class="study__detailText">3. 沒有特定的 this 關鍵字，函式內的 this 均繼承自父層</p>
         <p class="study__detailText">4. 何時不要用箭頭函式：要使用 this 時，要新增物件的 prototype method 時，要使用 arguments object 時</p>
