@@ -76,4 +76,12 @@
                 margin-top: 1rem;
             }
         }
+        &-back {            
+            &,
+            &:link,
+            &:visited {
+                padding: 1.5rem 0;
+                text-align: center;
+            }            
+        }
     }

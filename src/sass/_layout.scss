@@ -3,6 +3,10 @@
     @media only screen and (max-width: $bp-smallest) {
         height: 100vh;
     }
+    &-study {
+        height: 8rem;
+        background-color: $color-primary;
+    }
     position: relative;
     padding: $padding-main;
     display: flex;
@@ -48,7 +52,7 @@
             &:not(:last-child) {
                 margin-right: 5rem;
                 @media only screen and (max-width: $bp-smallest) {
-                    margin-right: 3rem;
+                    margin-right: 1.7rem;
                 }
             }
         }
@@ -132,6 +136,11 @@
         width: 100%;
         object-fit: cover;
     }
+}
+
+.bg-study {
+    background-image: url(../img/study/bg-coding.jpg);
+    background-size: cover;
 }
 
 .about {
@@ -518,6 +527,53 @@
         a:link,
         a:visited {
             color: $color-grey-light;
+        }
+    }
+}
+
+.study {
+    margin-top: calc(-100vh * .15);
+    &__detailContainer {
+        width: 100%;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 5px;
+        position: relative;
+    }
+    &__detailText {
+        font-family: $font-chinese;
+        font-size: 2rem;
+        color: $color-primary;
+        margin-bottom: 1rem;
+    }
+    &__detailCode {
+        font-family: $font-primary, $font-chinese;
+        width: 100%;
+        padding: 1rem;
+        background-color: $color-primary;
+        color: #fff;
+        font-size: 2rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        &-span {
+            margin-left: 1rem;
+            color: $color-error;
+        }
+    }
+    &__btn-back {
+        width: 10rem;     
+        position: absolute; 
+        left: 0;          
+        @media only screen and (max-width: $bp-smallest) {
+            width: 6rem;
+        }
+        &--top {
+            top: 0;
+            transform: translateY(-170%);
+        }
+        &--bottom {
+            bottom: 0;
+            transform: translateY(100%);
         }
     }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">變數宣告</h2>
+      <h3 class="heading-3">let, const & var</h3>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. ES6 新增了兩種宣告變數的方式：let & const</p>
+        <p class="study__detailText">2. let 宣告變數，宣告後可以重新賦值，宣告時可以不賦值</p>
+        <div class="study__detailCode">
+          let age;<br>
+          age = 23;<br>
+          console.log(age);<span class="study__detailCode-span">// 23</span><br>
+          age = 24;<br>
+          console.log(age);<span class="study__detailCode-span">// 24</span>
+        </div>
+        <p class="study__detailText">3. const 宣告常數，宣告後不可以重新賦值，宣告時不可以不賦值</p>
+        <div class="study__detailCode">
+          const age;<span class="study__detailCode-span">// error</span><br><br>
+          const age = 23;<br>
+          console.log(age);<span class="study__detailCode-span">// 23</span><br>
+          age = 24;<span class="study__detailCode-span">// error</span>
+        </div>
+        <p class="study__detailText">4. let & const 的作用域為 block scope，也就是 { } 中形成的 block，var 的作用域則是 function scope</p>
+        <p class="study__detailText">5. 因為 let & const 的作用域為 block scope，所以 IIFE 的寫法可以簡化為 { ...your code... }</p>
+        <p class="study__detailText">6. let & const 不能先使用後宣告</p>
+        <div class="study__detailCode">
+          console.log(age);<span class="study__detailCode-span">// undefined</span><br>
+          var age = 23;<br><br>
+          console.log(age);<span class="study__detailCode-span">// error: not defined</span><br>
+          const age = 23;
+        </div>
+        <p class="study__detailText">7. var, let & const 的使用取捨有兩派說法：說法 1，預設使用 const，若有需要更新重新賦值的變數再用 let，在 ES6 環境下不要使用
+          var，<a href="https://mathiasbynens.be/notes/es6-const" target="_blank">資料來源</a>。說法 2，在大型的 scope 下依然使用 var，let
+          & const 只用在小型的 scope。要選擇哪一種就看個人了</p>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>

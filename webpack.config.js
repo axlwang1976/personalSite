@@ -14,6 +14,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'study.html',
+            template: './src/study.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'study-detail-01.html',
+            template: './src/study-detail-01.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'study-detail-02.html',
+            template: './src/study-detail-02.html'
         })
     ],
     module: {

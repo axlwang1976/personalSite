@@ -10,26 +10,28 @@ navBtns[0].addEventListener('touchstart', () => {
     scrollToElement('.about');
 });
 
-navBtns[1].addEventListener('click', () => {
-    scrollToElement('.skill');
-});
-navBtns[1].addEventListener('touchstart', () => {
-    scrollToElement('.skill');
-});
+if (navBtns.length > 1) {
+    navBtns[1].addEventListener('click', () => {
+        scrollToElement('.skill');
+    });
+    navBtns[1].addEventListener('touchstart', () => {
+        scrollToElement('.skill');
+    });
 
-navBtns[2].addEventListener('click', () => {
-    scrollToElement('.work');
-});
-navBtns[2].addEventListener('touchstart', () => {
-    scrollToElement('.work');
-});
+    navBtns[2].addEventListener('click', () => {
+        scrollToElement('.work');
+    });
+    navBtns[2].addEventListener('touchstart', () => {
+        scrollToElement('.work');
+    });
 
-navBtns[3].addEventListener('click', () => {
-    scrollToElement('.contact');
-});
-navBtns[3].addEventListener('touchstart', () => {
-    scrollToElement('.contact');
-});
+    navBtns[3].addEventListener('click', () => {
+        scrollToElement('.contact');
+    });
+    navBtns[3].addEventListener('touchstart', () => {
+        scrollToElement('.contact');
+    });
+}
 
 // header
 window.addEventListener('scroll', function () {
