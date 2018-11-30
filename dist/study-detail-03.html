@@ -14,43 +14,28 @@
 </head>
 
 <body class="container">
-  <header class="header">
-    <div class="bg-video bg-study">
-    </div>
+  <header class="header header-study">
     <nav class="header__nav">
       <div class="header__nav-item">
         <a href="index.html" class="header__nav-link">Home</a>
       </div>
     </nav>
-    <div class="header__content">
-      <div class="header__content-logo">
-        <img src="img/logo.svg" alt="Site Logo" class="header__content-img">
-      </div>
-      <h1 class="heading-1 heading-tc">學無止境，前端尤甚，在這邊紀錄自己前端學習的筆記，一方面提醒自己，一方面加深印象</h1>
-    </div>
   </header>
   <main>
-    <section class="work study">
-      <h2 class="heading-2 heading-tc">筆記列表</h2>
-      <h3 class="heading-3">JavaScript ES6</h3>
-      <div class="work__container-web">
-        <div class="work__item">
-          <figure class="work__img">
-            <img src="img/study/es6.jpeg" alt="Study Image" class="work__img-desktop">
-          </figure>
-          <a href="study-detail-03.html" class="work__title-link heading-tc">Template Strings</a>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">Template Strings</h2>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
         </div>
-        <div class="work__item">
-          <figure class="work__img">
-            <img src="img/study/es6.jpeg" alt="Study Image" class="work__img-desktop">
-          </figure>
-          <a href="study-detail-02.html" class="work__title-link heading-tc">箭頭函式</a>
-        </div>
-        <div class="work__item">
-          <figure class="work__img">
-            <img src="img/study/es6.jpeg" alt="Study Image" class="work__img-desktop">
-          </figure>
-          <a href="study-detail-01.html" class="work__title-link heading-tc">變數宣告</a>
+        <p class="study__detailText">1. ES6 在處理字串方面新增的非常方便的 template strings</p>
+        <p class="study__detailText">2. 以往字串與變數在組合時需要用 ＋ 號，單引號或雙引號，還要注意空白，不是非常友善，且閱讀不易，template strings 改善了這個問題，只要用`
+          `開始與結束，內中直接鍵入想組合的字串，其中若有變數再用 $ { } 包起來，大括號裡面還可以做運算及條件判斷</p>
+        <img src="img/study/study-01.png"><br><br>
+        <p class="study__detailText">3. template strings 也增進了操作 DOM 時需要加入 markup 的易讀性及方便性</p>
+        <img src="img/study/study-02.png">
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
         </div>
       </div>
     </section>
