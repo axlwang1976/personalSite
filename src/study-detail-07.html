@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">New Array Methods</h2>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. Array.from() & Array.of()</p>
+        <div class="study__detailCode">
+          <span class="study__detailCode-span">// Array.from()</span><br>
+          const items = document.querySelectorAll('li');<span class="study__detailCode-span">// 選取的結果是類陣列的
+            nodelist，並沒有陣列完整的 methods</span><br>
+          const itemsArr = Array.from(items);<span class="study__detailCode-span">// Array.from() 將 items 轉為完整的陣列存入
+            itemsArr</span><br><br>
+          <span class="study__detailCode-span">// Array.of()</span><br>
+          const ages = Array.of(11, 22, 33, 44);<span class="study__detailCode-span">// [11, 22, 33, 44]，將傳入的參數轉為陣列</span>
+        </div>
+        <p class="study__detailText">2. someArray.find(callback()) 尋找符合條件的陣列內容，若條件成立，回傳該值</p>
+        <p class="study__detailText">3. someArray.findIndex(callback()) 尋找符合條件的陣列內容索引值，若條件成立，回傳該索引值</p>
+        <p class="study__detailText">4. someArray.some(callback()) 檢查陣列中是否有任意一個符合條件的元素，回傳布林值</p>
+        <p class="study__detailText">5. someArray.1. every(callback()) 檢查陣列中所有元素是否全部符合條件，回傳布林值</p>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+
+</html>

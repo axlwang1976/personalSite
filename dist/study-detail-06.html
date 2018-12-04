@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">for of Loop</h2>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. 陣列常用的 forEach method 一定要跑完陣列的全部，無法中斷 break 或跳過 continue，for of Loop 可解決</p>
+        <div class="study__detailCode">
+          const person = [ '令狐沖', '張無忌', '楊過', '韋小寶']<br><br>
+          <span class="study__detailCode-span">// forEach</span><br>
+          person.forEach(cur => {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;if (cur === '張無忌') {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(cur);<span class="study__detailCode-span">//
+            error</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          });<br><br>
+          <span class="study__detailCode-span">// for of</span><br>
+          for ( const name of person ) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;if (name === '張無忌') {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(name);<span class="study__detailCode-span">//
+            令狐沖、張無忌</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }
+        </div>
+        <p class="study__detailText">2. for of 搭配 Array.entries() 有意想不到的效果</p>
+        <div class="study__detailCode">
+          <span class="study__detailCode-span">// 承上例</span><br>
+          for ( const name of person.entries()) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;if (name === '張無忌') {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(name);<span class="study__detailCode-span">// [0,
+            '令狐沖'] [1, '張無忌']</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }<br><br>
+          <span class="study__detailCode-span">// 如果再搭配 Destructuring</span><br>
+          for ( const [i, name] of person.entries()) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;if (name === '張無忌') {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(`$ {name}是第 $ {i + 1} 個名字`);<span class="study__detailCode-span">//
+            令狐沖是第 1 個名字，張無忌是第 2 個名字</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          }
+        </div>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>

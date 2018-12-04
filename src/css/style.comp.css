@@ -564,6 +564,9 @@ body {
     .study__detailCode-span {
       margin-left: 1rem;
       color: #ff7730; }
+    .study__detailCodePre {
+      font-family: "Lato", sans-serif, "Noto Sans TC", sans-serif;
+      font-size: 2rem; }
   .study__btn-back {
     width: 10rem;
     position: absolute;

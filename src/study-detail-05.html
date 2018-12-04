@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">解構賦值</h2>
+      <h3 class="heading-3">Destructuring Assignment</h3>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. 中文翻譯解構賦值有點難懂，簡單講就是宣高變數賦予物件或陣列或函式回傳的值可以變得更方便</p>
+        <p class="study__detailText">2. 物件</p>
+        <div class="study__detailCode">
+          const person = {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;first: '沖',<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;last: '令狐',<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;city: '華山',<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;job: '劍客'<br>
+          };<br><br>
+          <span class="study__detailCode-span">// ES5 寫法</span><br>
+          const first = person.first;<br>
+          const last = person.last;<br><br>
+          <span class="study__detailCode-span">// ES6 寫法</span><br>
+          const { first, last } = person;<br><br>
+          <span class="study__detailCode-span">// 若不想變數名稱與物件 key 值搞混，可以在語法中重新命名變數</span><br>
+          const { first: firstName, last: lastName } = person;
+        </div>
+        <p class="study__detailText">3. 陣列</p>
+        <div class="study__detailCode">
+          const person = ['沖', '令狐', '華山', '劍客'];<br><br>
+          <span class="study__detailCode-span">// ES5 寫法</span><br>
+          const first = person[0];<br>
+          const last = person[1];<br><br>
+          <span class="study__detailCode-span">// ES6 寫法</span><br>
+          const [ first, last ] = person;
+        </div>
+        <p class="study__detailText">4. 變數交換位置</p>
+        <div class="study__detailCode">
+          <span class="study__detailCode-span">// 例如摔角雙打，同時間僅能一人在場內比賽，另一人在場外等待換手，換手後交換位置</span><br><br>
+          let inRing = '摔角手A';<br>
+          let onSide = '摔角手B';<br><br>
+          <span class="study__detailCode-span">// ES5 寫法</span><br>
+          var temp = inRing;<br>
+          inRing = onSide;<br>
+          onSide = temp;<br><br>
+          <span class="study__detailCode-span">// ES6 寫法</span><br>
+          [ inRing, onSide ] = [ onSide, inRing];
+        </div>
+        <p class="study__detailText">5. 有回傳的函式</p>
+        <div class="study__detailCode">
+          function convertCurrency(amount) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;const converted = {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USD: amount * 31,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JPY: amount * 0.275<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;};<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return converted;<br>
+          }<br><br>
+          const { USD, JPY } = convertCurrency(100);<span class="study__detailCode-span">// USD = 3100, JPY = 27.5</span>
+        </div>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+
+</html>

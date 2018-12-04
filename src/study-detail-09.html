@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">Promise</h2>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. promise 是 ES6 中新增用來處理非同步 JavaScript 的工具</p>
+        <p class="study__detailText">2. 語法同物件，使用關鍵字 new，有兩個狀態 resolve & reject，前者表示處理成功，後者表示發生錯誤</p>
+        <p class="study__detailText">3. 用 .then() 處理 resolve 的 promise，用 .catch() 處理 reject 的 promise</p>
+        <div class="study__detailCode">
+          const promise = new Promise((resolve, reject) => {<br>
+          <span class="study__detailCode-span">// 成功時</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;resolve(callback);<br>
+          <span class="study__detailCode-span">// 失敗時</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;reject(callback);<br>
+          });<br><br>
+          promise<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.then(callback)<span class="study__detailCode-span">// 成功時</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.catch(err => console.error(err));<span class="study__detailCode-span">// 失敗時</span>
+        </div>
+        <div class="study__detailCode">
+          const books = [<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{ title: '笑傲江湖', maleLead: '令狐沖', id: 1 },<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{ title: '倚天屠龍記', maleLead: '張無忌', id: 2 }<br>
+          ];<br><br>
+          const maleLeads = [<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{ name: '令狐沖', gang: '華山', skill: '獨孤九劍' },<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{ name: '張無忌', gang: '明教', skill: '乾坤大挪移' }<br>
+          ];<br><br>
+          function getBookById(id) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return new Promise((resolve, reject) => {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(() => {<span class="study__detailCode-span">//
+            模擬非同步</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const book = books.find(book =>
+          book.id === id);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(book) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve(book);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reject(Error('Book
+          not found!'));<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 2000);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+          }<br><br>
+          function hydrateMaleLead(book) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return new Promise((resolve, reject) => {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(() => {<span class="study__detailCode-span">//
+            模擬非同步</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const maleLeadDetail =
+          maleLeads.find(person =>
+          person.name === book.maleLead);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(maleLeadDetail) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;book.maleLead
+          = maleLeadDetail;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolve(book);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reject(Error('maleLead
+          not found!'));<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 2000);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;});<br>
+          }<br><br>
+          getBookById(2)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.then(book => {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(book);<span class="study__detailCode-span">//
+            2秒後得到{
+            title: '倚天屠龍記', maleLead: '張無忌', id: 2 }</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return hydrateMaleLead(book);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;})<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.then(book => {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(book);<span class="study__detailCode-span">//
+            2秒後得到{
+            title: '倚天屠龍記', maleLead: { name: '張無忌', gang: '明教', skill: '乾坤大挪移' }, id: 2 }</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;})<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.catch(err => console.error(err));
+        </div>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+
+</html>

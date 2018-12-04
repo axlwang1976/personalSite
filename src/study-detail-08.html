@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">Spread & Rest</h2>
+      <h3 class="heading-3">...</h3>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. spread，與 rest 相反，由少變多</p>
+        <div class="study__detailCode">
+          <span class="study__detailCode-span">// 用在字串，可將字串的每個字元拆解存成新陣列</span><br>
+          const stringSpread = [...'abc 123'];<span class="study__detailCode-span">// ['a', 'b', 'c', ' ', '1', '2',
+            '3']</span><br><br>
+          <span class="study__detailCode-span">// 用在陣列，可將多個陣列簡寫合併為新陣列，其中並可加入全新元素</span><br>
+          const arr1 = ['令狐沖', '張無忌'];<br>
+          const arr2 = ['任盈盈', '趙敏'];<br>
+          const newArr1 = [...arr1, ...arr2];<span class="study__detailCode-span">// ['令狐沖', '張無忌', '任盈盈', '趙敏']</span><br>
+          const newArr2 = [...arr1, '楚留香', ...arr2];<span class="study__detailCode-span">// ['令狐沖', '張無忌', '楚留香',
+            '任盈盈', '趙敏']</span><br><br>
+          <span class="study__detailCode-span">// 使用...複製陣列後，修改其中一陣列的內容並不會影響另一陣列</span><br>
+          <span class="study__detailCode-span">// 未使用...複製陣列</span><br>
+          const newArr3 = newArr1;<br>
+          newArr3[0] = '楊過';<br>
+          newArr3<span class="study__detailCode-span">// ['楊過', '張無忌', '任盈盈', '趙敏']</span><br>
+          newArr1<span class="study__detailCode-span">// ['楊過', '張無忌', '任盈盈', '趙敏']</span><br><br><span class="study__detailCode-span">//
+            使用...複製陣列</span><br>
+          const newArr4 = [...newArr1];<br>
+          newArr4[0] = '楊過';<br>
+          newArr4<span class="study__detailCode-span">// ['楊過', '張無忌', '任盈盈', '趙敏']</span><br>
+          newArr1<span class="study__detailCode-span">// ['令狐沖', '張無忌', '任盈盈', '趙敏']</span><br><br>
+          <span class="study__detailCode-span">// 用在引數，不想產生新陣列時也可用</span><br>
+          arr1.push(...arr2);<span class="study__detailCode-span">// ['令狐沖', '張無忌', '任盈盈', '趙敏']</span>
+        </div>
+        <p class="study__detailText">2. rest，與 spread 相反，由多變少</p>
+        <div class="study__detailCode">
+          <span class="study__detailCode-span">// 用在函式，當傳入的引數數量未知時</span><br>
+          function jpyToTwd (rate, ...amounts) {<span class="study__detailCode-span">// 日幣轉台幣，rest...結果為陣列</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return amounts.map(amount => amount * rate);<span class="study__detailCode-span">//
+            日幣轉台幣</span><br>
+          }<br>
+          jpyToTwd(0.275, 100, 200, 300);<span class="study__detailCode-span">// [27.5, 55, 82.5]</span><br><br>
+        </div>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+
+</html>
