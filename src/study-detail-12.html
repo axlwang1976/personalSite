@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEI HUAN WANG - 學習筆記</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="container">
+  <header class="header header-study">
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <a href="index.html" class="header__nav-link">Home</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="work">
+      <h2 class="heading-2 heading-tc">Async / Await</h2>
+      <div class="study__detailContainer">
+        <div class="study__btn-back study__btn-back--top">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+        <p class="study__detailText">1. 之前提到的 Promises，最大的一個優點就是可以避免 call back hell 的發生，但若呼叫的次數一高，可讀性仍然有些差</p>
+        <div class="study__detailCode">
+          <pre class="study__detailCodePre">
+            <span class="study__detailCode-span">// 設計一個呼吸函式，傳入呼吸一次的時間，回傳 promise</span>
+            function breathe(time) {
+              return new Promise((resolve, reject) => {
+                if (time < 500) {
+                  reject('這次呼吸太快了');
+                }
+                setTimeout(() => resolve(`這次呼吸用了 $ {time} 毫秒`), time);
+              });
+            }
+          </pre>
+        </div>
+        <div class="study__detailCode">
+          <pre class="study__detailCodePre">
+            <span class="study__detailCode-span">// promises 的 then / catch 寫法</span>
+            breathe(1000)
+              .then(res => {
+                console.log(res);
+                return breathe(500);
+              })
+              .then(res => {
+                console.log(res);
+                return breathe(600);
+              })
+              .then(res => {
+                console.log(res);
+                return breathe(700);
+              })
+              .catch(err => {
+                console.error(err);            
+              });
+          </pre>
+        </div>
+        <p class="study__detailText">2. 於是有了 Async / Await ，不再需要用 then 一個鍊結一個，讓可讀性變高，</p>
+        <div class="study__detailCode">
+          <pre class="study__detailCodePre">
+            <span class="study__detailCode-span">// 新增一個 async 函式，內中加入 await 達到非同步的順序控制，並用 try / catch 處理 promise 的 resolve & reject</span>
+            async function go() {
+              try {
+                const res = await breathe(1000);
+                console.log(res);
+                const res2 = await breathe(500);
+                console.log(res2);
+                const res3 = await breathe(600);
+                console.log(res3);
+                const res4 = await breathe(700);
+              } catch (err) {
+                console.error(err);
+              }              
+            }
+            go();
+          </pre>
+        </div>
+        <div class="study__btn-back study__btn-back--bottom">
+          <a href="study.html" class="btn btn-back">Back</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+    <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+</body>
+
+</html>
