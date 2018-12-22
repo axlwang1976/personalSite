@@ -13,17 +13,9 @@ module.exports = {
         contentBase: './dist'
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     filename: 'index.html',
-        //     template: './src/index.html'
-        // }),
         new HtmlWebpackPlugin({
-            filename: 'study.html',
-            template: './src/study.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'study-detail-12.html',
-            template: './src/study-detail-12.html'
+            filename: 'index.html',
+            template: './src/index.html'
         })
     ],
     module: {
