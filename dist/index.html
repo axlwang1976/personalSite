@@ -1,538 +1,762 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      WEI HUAN WANG - A middle aged man who try to figure front-end web
+      development out more
+    </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WEI HUAN WANG - A middle aged man who try to figure front-end web development out more</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body class="container">
+  <body class="container">
     <header class="header">
-        <div class="bg-video">
-            <video class="bg-video__content" autoplay muted loop>
-                <source src="img/header-bg.mp4" type="video/mp4">
-            </video>
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/header-bg.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#section-about" class="header__nav-link">About</a>
         </div>
-        <nav class="header__nav">
-            <div class="header__nav-item">
-                <a href="#section-about" class="header__nav-link">About</a>
-            </div>
-            <div class="header__nav-item">
-                <a href="#section-skill" class="header__nav-link">Skills</a>
-            </div>
-            <div class="header__nav-item">
-                <a href="#section-work" class="header__nav-link">Works</a>
-            </div>
-            <div class="header__nav-item">
-                <a href="#section-contact" class="header__nav-link">Contact</a>
-            </div>
-            <div class="header__nav-item">
-                <a href="study.html" class="header__nav-link">Study</a>
-            </div>
-        </nav>
-        <div class="header__content">
-            <div class="header__content-logo">
-                <img src="img/logo.svg" alt="Site Logo" class="header__content-img">
-            </div>
-            <h1 class="heading-1">A <span class="heading-1__span">middle aged man</span> who try to figure <span class="heading-1__span">front-end</span>
-                web development out more</h1>
+        <div class="header__nav-item">
+          <a href="#section-skill" class="header__nav-link">Skills</a>
         </div>
+        <div class="header__nav-item">
+          <a href="#section-work" class="header__nav-link">Works</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="#section-contact" class="header__nav-link">Contact</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="study.html" class="header__nav-link">Study</a>
+        </div>
+      </nav>
+      <div class="header__content">
+        <div class="header__content-logo">
+          <img src="img/logo.svg" alt="Site Logo" class="header__content-img" />
+        </div>
+        <h1 class="heading-1">
+          A <span class="heading-1__span">middle aged man</span> who try to
+          figure <span class="heading-1__span">front-end</span> web development
+          out more
+        </h1>
+      </div>
     </header>
     <main>
-        <section class="about" id="section-about">
-            <h2 class="heading-2">Who I am</h2>
-            <div class="about__grid">
-                <div class="about__grid-time about__grid-time--1">
-                    1976
-                    <svg class="time__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </div>
-                <div class="about__grid-time about__grid-time--2">
-                    1999
-                    <svg class="time__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </div>
-                <div class="about__grid-time about__grid-time--3">
-                    2001
-                    <svg class="time__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </div>
-                <div class="about__grid-time about__grid-time--4">
-                    2011
-                    <svg class="time__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </div>
-                <div class="about__grid-time about__grid-time--5">
-                    2013
-                    <svg class="time__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </div>
-                <div class="about__grid-time about__grid-time--6">
-                    2015
-                    <svg class="time__icon">
-                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </div>
-                <div class="about__grid-time about__grid-time--7">2018</div>
-                <div class="about__grid-item about__grid-item--1">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-home"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">Born</div>
-                </div>
-                <div class="about__grid-item about__grid-item--2">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-book"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">Collage Education</div>
-                </div>
-                <div class="about__grid-item about__grid-item--3">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-rocket"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">Army</div>
-                </div>
-                <div class="about__grid-item about__grid-item--4">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-display"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">MIS Job</div>
-                </div>
-                <div class="about__grid-item about__grid-item--5">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-man-woman"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">Get Married & Career Change</div>
-                </div>
-                <div class="about__grid-item about__grid-item--6">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-embed2"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">Web Front-End Job</div>
-                </div>
-                <div class="about__grid-item about__grid-item--7">
-                    <div class="about__grid-item-icon">
-                        <svg class="text__icon">
-                            <use xlink:href="img/sprite.svg#icon-embed2"></use>
-                        </svg>
-                    </div>
-                    <div class="about__grid-item-text">Web Front-End Job</div>
-                </div>
+      <section class="about" id="section-about">
+        <h2 class="heading-2">Who I am</h2>
+        <div class="about__grid">
+          <div class="about__grid-time about__grid-time--1">
+            1976
+            <svg class="time__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="about__grid-time about__grid-time--2">
+            1999
+            <svg class="time__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="about__grid-time about__grid-time--3">
+            2001
+            <svg class="time__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="about__grid-time about__grid-time--4">
+            2011
+            <svg class="time__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="about__grid-time about__grid-time--5">
+            2013
+            <svg class="time__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="about__grid-time about__grid-time--6">
+            2015
+            <svg class="time__icon">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+          <div class="about__grid-time about__grid-time--7">2018</div>
+          <div class="about__grid-item about__grid-item--1">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
             </div>
-        </section>
-        <section class="skill" id="section-skill">
-            <h2 class="heading-2">What I can do</h2>
-            <div class="skill__container">
-                <div class="skill__working">
-                    <h3 class="heading-3">Working knowledge</h3>
-                    <ul class="skill__list">
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">UI</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <img src="img/icon-sketch.svg" alt="Sketch Icon" class="brand__icon">
-                                </span>
-                                <span>Sketch</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-adobephotoshop"></use>
-                                    </svg>
-                                </span>
-                                <span>Photoshop</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-adobeillustrator"></use>
-                                    </svg>
-                                </span>
-                                <span>Illustrator</span>
-                            </div>
-                        </li>
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">Basic</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-html5"></use>
-                                    </svg>
-                                </span>
-                                <span>HTML</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-visualstudiocode"></use>
-                                    </svg>
-                                </span>
-                                <span>Text Editor</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-git"></use>
-                                    </svg>
-                                </span>
-                                <span>Git</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-terminal"></use>
-                                    </svg>
-                                </span>
-                                <span>Terminal</span>
-                            </div>
-                        </li>
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">CSS</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-css3"></use>
-                                    </svg>
-                                </span>
-                                <span>Basic CSS</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-css3"></use>
-                                    </svg>
-                                </span>
-                                <span>Animation</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-css3"></use>
-                                    </svg>
-                                </span>
-                                <span>Flex Box</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-css3"></use>
-                                    </svg>
-                                </span>
-                                <span>CSS Grid</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-sass"></use>
-                                    </svg>
-                                </span>
-                                <span>Sass</span>
-                            </div>
-                        </li>
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">JavaScript</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-javascript"></use>
-                                    </svg>
-                                </span>
-                                <span>ES5</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-javascript"></use>
-                                    </svg>
-                                </span>
-                                <span>ES6</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-react"></use>
-                                    </svg>
-                                </span>
-                                <span>React</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-jquery"></use>
-                                    </svg>
-                                </span>
-                                <span>jQuery</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <img src="img/babel.svg" alt="Babel Icon" class="brand__icon brand__icon-babel">
-                                </span>
-                                <span>Babel</span>
-                            </div>
-                        </li>
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">Others</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-npm"></use>
-                                    </svg>
-                                </span>
-                                <span>npm</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-webpack"></use>
-                                    </svg>
-                                </span>
-                                <span>webpack</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <img src="img/icon-azure.png" alt="Azure Icon" class="brand__icon">
-                                </span>
-                                <span>Microsoft Azure</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill__basic">
-                    <h3 class="heading-3">Basic knowledge</h3>
-                    <ul class="skill__list">
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">CSS</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <svg class="brand__icon">
-                                        <use xlink:href="img/sprite--2.svg#icon-bootstrap"></use>
-                                    </svg>
-                                </span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="skill__detail">
-                                <span>
-                                    <img src="img/semanticui-logo.png" alt="Semanticui Icon" class="brand__icon brand__icon-babel">
-                                </span>
-                                <span>Semantic UI</span>
-                            </div>
-                        </li>
-                        <li class="skill__list-item">
-                            <h4 class="heading-4">JavaScript</h4>
-                            <div class="skill__detail">
-                                <span>
-                                    <img src="img/svg/redux.svg" alt="Redux Icon" class="brand__icon brand__icon-babel">
-                                </span>
-                                <span>Redux</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="about__grid-item-text">Born</div>
+          </div>
+          <div class="about__grid-item about__grid-item--2">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-book"></use>
+              </svg>
             </div>
-        </section>
-        <section class="work" id="section-work">
-            <h2 class="heading-2">What I have done</h2>
-            <h3 class="heading-3">SIDE PROJECTS</h3>
-            <ul style="margin-bottom: 5rem; list-style: none;">
-                <li>
-                    <a href="https://github.com/axlwang1976/React-Redux-CRUD" target="_blank" style="font-size: 2rem;">React & Redux CRUD Practice - Video Playlist</a>
-                </li>
-                <li>
-                    <a href="http://52.163.86.176:8000/" target="_blank" style="font-size: 2rem;">React Practice - Buy Photos</a>
-                </li>
-                <li>
-                    <a href="http://52.163.86.176:8001/" target="_blank" style="font-size: 2rem;">React Practice - YouTube Videos</a>
-                </li>
+            <div class="about__grid-item-text">Collage Education</div>
+          </div>
+          <div class="about__grid-item about__grid-item--3">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-rocket"></use>
+              </svg>
+            </div>
+            <div class="about__grid-item-text">Army</div>
+          </div>
+          <div class="about__grid-item about__grid-item--4">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-display"></use>
+              </svg>
+            </div>
+            <div class="about__grid-item-text">MIS Job</div>
+          </div>
+          <div class="about__grid-item about__grid-item--5">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-man-woman"></use>
+              </svg>
+            </div>
+            <div class="about__grid-item-text">Get Married & Career Change</div>
+          </div>
+          <div class="about__grid-item about__grid-item--6">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-embed2"></use>
+              </svg>
+            </div>
+            <div class="about__grid-item-text">Web Front-End Job</div>
+          </div>
+          <div class="about__grid-item about__grid-item--7">
+            <div class="about__grid-item-icon">
+              <svg class="text__icon">
+                <use xlink:href="img/sprite.svg#icon-embed2"></use>
+              </svg>
+            </div>
+            <div class="about__grid-item-text">Web Front-End Job</div>
+          </div>
+        </div>
+      </section>
+      <section class="skill" id="section-skill">
+        <h2 class="heading-2">What I can do</h2>
+        <div class="skill__container">
+          <div class="skill__working">
+            <h3 class="heading-3">Working knowledge</h3>
+            <ul class="skill__list">
+              <li class="skill__list-item">
+                <h4 class="heading-4">UI</h4>
+                <div class="skill__detail">
+                  <span>
+                    <img
+                      src="img/icon-sketch.svg"
+                      alt="Sketch Icon"
+                      class="brand__icon"
+                    />
+                  </span>
+                  <span>Sketch</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use
+                        xlink:href="img/sprite--2.svg#icon-adobephotoshop"
+                      ></use>
+                    </svg>
+                  </span>
+                  <span>Photoshop</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use
+                        xlink:href="img/sprite--2.svg#icon-adobeillustrator"
+                      ></use>
+                    </svg>
+                  </span>
+                  <span>Illustrator</span>
+                </div>
+              </li>
+              <li class="skill__list-item">
+                <h4 class="heading-4">Basic</h4>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-html5"></use>
+                    </svg>
+                  </span>
+                  <span>HTML</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use
+                        xlink:href="img/sprite--2.svg#icon-visualstudiocode"
+                      ></use>
+                    </svg>
+                  </span>
+                  <span>Text Editor</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-git"></use>
+                    </svg>
+                  </span>
+                  <span>Git</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-terminal"></use>
+                    </svg>
+                  </span>
+                  <span>Terminal</span>
+                </div>
+              </li>
+              <li class="skill__list-item">
+                <h4 class="heading-4">CSS</h4>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-css3"></use>
+                    </svg>
+                  </span>
+                  <span>Basic CSS</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-css3"></use>
+                    </svg>
+                  </span>
+                  <span>Animation</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-css3"></use>
+                    </svg>
+                  </span>
+                  <span>Flex Box</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-css3"></use>
+                    </svg>
+                  </span>
+                  <span>CSS Grid</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-sass"></use>
+                    </svg>
+                  </span>
+                  <span>Sass</span>
+                </div>
+              </li>
+              <li class="skill__list-item">
+                <h4 class="heading-4">JavaScript</h4>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-javascript"></use>
+                    </svg>
+                  </span>
+                  <span>ES5</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-javascript"></use>
+                    </svg>
+                  </span>
+                  <span>ES6</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-react"></use>
+                    </svg>
+                  </span>
+                  <span>React</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-jquery"></use>
+                    </svg>
+                  </span>
+                  <span>jQuery</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <img
+                      src="img/babel.svg"
+                      alt="Babel Icon"
+                      class="brand__icon brand__icon-babel"
+                    />
+                  </span>
+                  <span>Babel</span>
+                </div>
+              </li>
+              <li class="skill__list-item">
+                <h4 class="heading-4">Others</h4>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-npm"></use>
+                    </svg>
+                  </span>
+                  <span>npm</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-webpack"></use>
+                    </svg>
+                  </span>
+                  <span>webpack</span>
+                </div>
+                <div class="skill__detail">
+                  <span>
+                    <img
+                      src="img/icon-azure.png"
+                      alt="Azure Icon"
+                      class="brand__icon"
+                    />
+                  </span>
+                  <span>Microsoft Azure</span>
+                </div>
+              </li>
             </ul>
-            <h3 class="heading-3">WEB</h3>
-            <div class="work__container-web">
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--1.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">皇宮月亮蝦餅 (已改版)</p>
+          </div>
+          <div class="skill__basic">
+            <h3 class="heading-3">Basic knowledge</h3>
+            <ul class="skill__list">
+              <li class="skill__list-item">
+                <h4 class="heading-4">CSS</h4>
+                <div class="skill__detail">
+                  <span>
+                    <svg class="brand__icon">
+                      <use xlink:href="img/sprite--2.svg#icon-bootstrap"></use>
+                    </svg>
+                  </span>
+                  <span>Bootstrap</span>
                 </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--3.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">蜆豐國際 (已改版)</p>
+                <div class="skill__detail">
+                  <span>
+                    <img
+                      src="img/semanticui-logo.png"
+                      alt="Semanticui Icon"
+                      class="brand__icon brand__icon-babel"
+                    />
+                  </span>
+                  <span>Semantic UI</span>
                 </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--4.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">Johan Ku (已改版)</p>
+              </li>
+              <li class="skill__list-item">
+                <h4 class="heading-4">JavaScript</h4>
+                <div class="skill__detail">
+                  <span>
+                    <img
+                      src="img/svg/redux.svg"
+                      alt="Redux Icon"
+                      class="brand__icon brand__icon-babel"
+                    />
+                  </span>
+                  <span>Redux</span>
                 </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--16.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">良品嚴選計畫 (已改版)</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--6.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">遠雄會員系統 (封閉系統)</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--2.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="http://shopping.taiyuen.com/" class="work__title-link" target="_blank">台元嚴選</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--17.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="https://fbrsvn.regenttaiwan.com/regent_bsclient/Regent/Order/Add/001,zh-TW" class="work__title-link"
-                        target="_blank">晶華酒店訂位系統</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--8.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="http://www.hilife.com.tw/HI_Shipping/hilife/01_home.aspx" class="work__title-link" target="_blank">萊爾富店到店系統</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--10.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="http://www.weixia.com.tw/WSWebSite/" class="work__title-link" target="_blank">暐順經貿大樓</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--11.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="http://splaza.com.tw/" class="work__title-link" target="_blank">秀泰生活 (已小改版)</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--12.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="https://www.sum.com.tw/" class="work__title-link" target="_blank">SUM 賞車網</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--13.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="https://tc-olink.turn2cloud.com/" class="work__title-link" target="_blank">騰雲科技 Olink 專頁</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--14.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <a href="https://turn2cloud.com/" class="work__title-link" target="_blank">騰雲科技</a>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--7.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">萊爾富電子發票系統 (未上線)</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--15.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">統領百貨 (未上線)</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--9.png" alt="Work Image" class="work__img-desktop">
-                    </figure>
-                    <p class="work__title">三井 outlet 會員系統 (未上線)</p>
-                </div>
-            </div>
-            <h3 class="heading-3">Mobile APP</h3>
-            <div class="work__container-app">
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--18.png" alt="Work Image" class="work__img-app">
-                    </figure>
-                    <p class="work__title">微信 - 台灣好遊點</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--19.png" alt="Work Image" class="work__img-app">
-                    </figure>
-                    <p class="work__title">饗食天堂活動</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--20.png" alt="Work Image" class="work__img-app">
-                    </figure>
-                    <p class="work__title">萊爾富 - 萊儲值</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--21.png" alt="Work Image" class="work__img-app">
-                    </figure>
-                    <p class="work__title">萊爾富 - 萊繳費</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--22.png" alt="Work Image" class="work__img-app">
-                    </figure>
-                    <p class="work__title">萊爾富 - 閱讀起步走</p>
-                </div>
-                <div class="work__item">
-                    <figure class="work__img">
-                        <img src="img/work/work--23.png" alt="Work Image" class="work__img-app">
-                    </figure>
-                    <p class="work__title">台開金獅影城</p>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="section-contact">
-            <h2 class="heading-2">Contact Me</h2>
-            <form action="#" class="form">
-                <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Your Name" id="name" name="name" required>
-                    <label for="name" class="form__label">Your Name</label>
-                </div>
-                <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Your E-mail" id="email" name="email" required>
-                    <label for="email" class="form__label">Your E-mail</label>
-                </div>
-                <div class="form__group">
-                    <textarea id="message" class="form__textarea" placeholder="Your Message" rows="5" name="message"></textarea>
-                    <label for="message" class="form__label">Your Message</label>
-                </div>
-                <button type="submit" class="btn btn-submit" disabled>(disabled)</button>
-            </form>
-        </section>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="section-work">
+        <h2 class="heading-2">What I have done</h2>
+        <h3 class="heading-3">SIDE PROJECTS</h3>
+        <ul style="margin-bottom: 5rem; list-style: none;">
+          <li>
+            <a
+              href="https://github.com/axlwang1976/React-Redux-CRUD"
+              target="_blank"
+              style="font-size: 2rem;"
+              >React & Redux CRUD Practice - Video Playlist</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://52.163.86.176:8000/"
+              target="_blank"
+              style="font-size: 2rem;"
+              >React Practice - Buy Photos</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://52.163.86.176:8001/"
+              target="_blank"
+              style="font-size: 2rem;"
+              >React Practice - YouTube Videos</a
+            >
+          </li>
+        </ul>
+        <h3 class="heading-3">WEB</h3>
+        <div class="work__container-web">
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--1.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <p class="work__title">皇宮月亮蝦餅 (已改版)</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--3.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <p class="work__title">蜆豐國際 (已改版)</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--4.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <p class="work__title">Johan Ku (已改版)</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--16.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <p class="work__title">良品嚴選計畫 (已改版)</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--6.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <p class="work__title">遠雄會員系統 (封閉系統)</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--2.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="http://shopping.taiyuen.com/"
+              class="work__title-link"
+              target="_blank"
+              >台元嚴選</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--17.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="https://fbrsvn.regenttaiwan.com/regent_bsclient/Regent/Order/Add/001,zh-TW"
+              class="work__title-link"
+              target="_blank"
+              >晶華酒店訂位系統</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--8.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="http://www.hilife.com.tw/HI_Shipping/hilife/01_home.aspx"
+              class="work__title-link"
+              target="_blank"
+              >萊爾富店到店系統</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--10.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="http://www.weixia.com.tw/WSWebSite/"
+              class="work__title-link"
+              target="_blank"
+              >暐順經貿大樓</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--11.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="http://splaza.com.tw/"
+              class="work__title-link"
+              target="_blank"
+              >秀泰生活 (已小改版)</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--12.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="https://www.sum.com.tw/"
+              class="work__title-link"
+              target="_blank"
+              >SUM 賞車網</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--13.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="https://tc-olink.turn2cloud.com/"
+              class="work__title-link"
+              target="_blank"
+              >騰雲科技 Olink 專頁</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--14.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="https://turn2cloud.com/"
+              class="work__title-link"
+              target="_blank"
+              >騰雲科技</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--7.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="https://einvoice.hilife.com.tw/"
+              target="_blank"
+              class="work__title-link"
+              >萊爾富電子發票系統</a
+            >
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--15.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <p class="work__title">統領百貨 (未上線)</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--9.png"
+                alt="Work Image"
+                class="work__img-desktop"
+              />
+            </figure>
+            <a
+              href="https://mitsuiweb.m-memlogin.com.tw/"
+              target="_blank"
+              class="work__title-link"
+              >三井 outlet 會員系統</a
+            >
+          </div>
+        </div>
+        <h3 class="heading-3">Mobile APP</h3>
+        <div class="work__container-app">
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--18.png"
+                alt="Work Image"
+                class="work__img-app"
+              />
+            </figure>
+            <p class="work__title">微信 - 台灣好遊點</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--19.png"
+                alt="Work Image"
+                class="work__img-app"
+              />
+            </figure>
+            <p class="work__title">饗食天堂活動</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--20.png"
+                alt="Work Image"
+                class="work__img-app"
+              />
+            </figure>
+            <p class="work__title">萊爾富 - 萊儲值</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--21.png"
+                alt="Work Image"
+                class="work__img-app"
+              />
+            </figure>
+            <p class="work__title">萊爾富 - 萊繳費</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--22.png"
+                alt="Work Image"
+                class="work__img-app"
+              />
+            </figure>
+            <p class="work__title">萊爾富 - 閱讀起步走</p>
+          </div>
+          <div class="work__item">
+            <figure class="work__img">
+              <img
+                src="img/work/work--23.png"
+                alt="Work Image"
+                class="work__img-app"
+              />
+            </figure>
+            <p class="work__title">台開金獅影城</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="section-contact">
+        <h2 class="heading-2">Contact Me</h2>
+        <form action="#" class="form">
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Your Name"
+              id="name"
+              name="name"
+              required
+            />
+            <label for="name" class="form__label">Your Name</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="email"
+              class="form__input"
+              placeholder="Your E-mail"
+              id="email"
+              name="email"
+              required
+            />
+            <label for="email" class="form__label">Your E-mail</label>
+          </div>
+          <div class="form__group">
+            <textarea
+              id="message"
+              class="form__textarea"
+              placeholder="Your Message"
+              rows="5"
+              name="message"
+            ></textarea>
+            <label for="message" class="form__label">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-submit" disabled>
+            (disabled)
+          </button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
-        <div class="footer__info">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div class="footer__info">Copyright &copy; by Wei Huan Wang</div>
+      <div class="footer__info">
+        Icons made by
+        <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </div>
     </footer>
-<script type="text/javascript" src="js/bundle.js"></script></body>
-
+  <script type="text/javascript" src="js/bundle.js"></script></body>
 </html>
